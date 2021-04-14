@@ -14,8 +14,8 @@
                      <i class="fa fa-university"></i>
                  </div>
                  <a href="index-2.html">
-                     Coop Bank
-                     <span>Your money is safe.</span>
+                    CRS
+                     <span>Centrale des Risques Sectorielle</span>
                  </a>
              </div>
          </div>

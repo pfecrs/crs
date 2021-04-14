@@ -12,7 +12,7 @@
                             </a>
                         </li>
                         <li>
-                            Welcome To CoopBank
+                            Bienvenue au Centrale des Risques Sectorielle
                         </li>
                     </ul>
                 </div>
@@ -261,7 +261,7 @@
              <!-- End Content Breadcumbs And Slide-->
 
             <!-- Content Tabs Section-->
-            <div class="col-md-4 col-lg-3">
+            {{-- <div class="col-md-4 col-lg-3">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                   <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Simulator</a></li>
@@ -342,7 +342,7 @@
                   <!-- tab-Item-2-->
                 </div>
                 <!-- End tab-content -->
-            </div>
+            </div> --}}
             <!-- End Tabs section-->
         </div>
     </div>

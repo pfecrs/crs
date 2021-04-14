@@ -1,4 +1,4 @@
-                    <!-- Login Area -->
+                    {{-- <!-- Login Area -->
                     <div class="col-md-8 col-lg-7">
                         <div class="info-login">
                             <div class="head-info-login">
@@ -28,4 +28,4 @@
                     <!-- End Login Area -->
                 </div>
             </header>
-            <!-- End Header Area -->
+            <!-- End Header Area --> --}}

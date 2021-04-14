@@ -1,7 +1,7 @@
 <head>
     <!-- Basic -->
     <meta charset="utf-8">
-    <title>CoopBank - Cooperative, bank and financial Html Template</title>
+    <title>CRS</title>
     <meta name="keywords" content="HTML5 Template" />
     <meta name="description" content="CoopBank - Responsive HTML5 Template">
     <meta name="author" content="iwthemes.com">  
