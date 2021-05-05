@@ -111,11 +111,11 @@ var App = function() {
     var productionFunctionality = {
         createButtons: function() {
             var form = [
-                {
-                    type: 'anchor',
-                    label: 'Buy Now',
-                    target: '_blank'
-                },
+                // {
+                //     type: 'anchor',
+                //     label: '',
+                //     target: '_blank'
+                // },
                 {
                     type: 'button',
                     label: ''

@@ -16,9 +16,14 @@ class CreateEntreprisesTable extends Migration
         Schema::create('entreprises', function (Blueprint $table) {
             $table->id();
             $table->string('nom', 255)->nullable();
+            $table->string('identifiant_unique', 255)->nullable();
             $table->string('secteur', 255)->nullable();
             $table->string('adresse', 255)->nullable();
-            $table->integer('id_document')->unsigned();
+            $table->string('email', 255)->nullable();
+            $table->integer('phone')->unsigned()->nullable();
+            $table->text('description', 255)->nullable();
+            $table->string('image_path', 255)->nullable();
+
             $table->timestamps();
         });
     }

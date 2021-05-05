@@ -13,7 +13,10 @@ class Entreprise extends Model
         'nom',
         'adresse',
         'secteur',
-        'id_document'
+        'description',
+        'image_path',
+        'identifiant_unique'
+        
     ];
 
 }

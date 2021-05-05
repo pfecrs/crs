@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EntrepriseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('client/entreprise/search',[EntrepriseController::class, 'search'])->name('handleSearchEntreprise');
+//Route::post('entreprise', [EntrepriseController::class, 'handleDelete'])->name('handleDeleteEntreprise');
