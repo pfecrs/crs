@@ -20,7 +20,7 @@
     <link href={{asset('Backoffice/assets/css/apps/todolist.css')}} rel="stylesheet" type="text/css" />
     <link rel=stylesheet" type="text/css" href={{asset('Backoffice/plugins/select2/select2.min.css')}}>
     {{-- <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet" /> --}}
-    
+    <link rel="stylesheet" type="text/css" href={{asset('Backoffice/assets/css/forms/theme-checkbox-radio.css')}}>
     
     <style>
         .layout-px-spacing {

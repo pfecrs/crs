@@ -13,7 +13,7 @@ class Client extends Authenticatable
 
     protected $guard = 'client';
 
-    protected $fillable =['nom', 'prenom' , 'email' , 'date_naissance' , 'num_telephone' ,  'password' , 'cin' , 'entreprise','nb_docs'];
+    protected $fillable =['nom', 'prenom' , 'email' , 'date_naissance' , 'num_telephone' ,'date_expiration',  'password' , 'cin' , 'entreprise','nb_docs'];
 
     protected $hidden =['password','remember_token'];
 }

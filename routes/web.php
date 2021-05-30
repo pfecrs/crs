@@ -8,6 +8,7 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\EntrepriseController;
+use App\Http\Controllers\ReclamationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -87,7 +88,6 @@ Route::namespace('Admin')->middleware('auth:admin')->prefix('admin')->group(func
     Route::post('entreprise', [EntrepriseController::class, 'handleDelete'])->name('handleDeleteEntreprise');
     
 
-
     Route::get('documents', [DocumentController::class, 'showHomeDocument'])->name('showListeDocument');
     Route::get('document/add', [DocumentController::class, 'showAddDocument'])->name('showAddDocument');
     Route::post('document/add', [DocumentController::class, 'handleAddDocument'])->name('handleAddDocument');
@@ -98,15 +98,29 @@ Route::namespace('Admin')->middleware('auth:admin')->prefix('admin')->group(func
 
 
     Route::get('users', [UserController::class, 'showHomeUsers'])->name('showListeUser');
+    Route::get('user/edit', [UserController::class, 'showEditUser'])->name('showEditUser');
+    Route::post('user/edit', [UserController::class, 'handleEditUser'])->name('handleEditUser');
+    //Route::get('users', [UserController::class, 'showHomeUsers'])->name('showListeUser');
+
+
 
 
     Route::get('articles', [ArticleController::class, 'showListeArticlesAdmin'])->name('showListeArticle');
     Route::post('articles/add', [ArticleController::class, 'handleArticleAdd'])->name('handleArticleAdd');
     Route::post('articles/drop', [ArticleController::class, 'handleDeleteArticleAdmin'])->name('handleDeleteArticleAdmin');
+
+
+    Route::get('reclamations', [ReclamationController::class, 'showListeReclamationsAdmin'])->name('showListeReclamations');
+    Route::get('reclamation/verif', [ReclamationController::class, 'showAdminEditReclamation'])->name('showEditReclamation');
+    Route::post('reclamation/verif', [ReclamationController::class, 'handleAdminEditReclamation'])->name('handleEditReclamation');
+
+
+    
 });
 
-
-
+Route::get('/planning', function () {
+    return view('Frontoffice.not-planning');
+});
 // Route::namespace('client')->middleware('auth:client')->prefix('client')->group(function () {
 
 Route::namespace('Client')->middleware('auth:client')->prefix('client')->group(function () {
@@ -116,4 +130,13 @@ Route::namespace('Client')->middleware('auth:client')->prefix('client')->group(f
     Route::post('profile', [UserController::class, 'hanleClientDetails'])->name('handleClientDetails');
     Route::get('articles', [ArticleController::class, 'showListeArticlesClient'])->name('showListeArticlesClient');
     Route::post('article', [ArticleController::class, 'showOneArticleClient'])->name('showOneArticleClient');
+
+    Route::get('entreprise/rechercher', [EntrepriseController::class,'showSearch'])->name('showSearchEntreprise');
+    Route::post('entreprise/rechercher', [EntrepriseController::class,'handleSearch'])->name('handleSearchEntreprise');
+    
+
+
+    Route::get('reclamations',[ReclamationController::class,'showClientListeReclamations'])->name('showReclamationIndexClient');
+    Route::get('reclamation/add',[ReclamationController::class,'showClientAddReclamation'])->name('showReclamationAddClient');
+    Route::post('reclamation/add',[ReclamationController::class,'handleClientAddReclamation'])->name('handleReclamationAddClient');
 });

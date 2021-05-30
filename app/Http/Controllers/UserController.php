@@ -13,7 +13,8 @@ class UserController extends Controller
    
     public function showHomeUsers()
     {
-        $users = User::all();
+        
+        $users = Client::all();
         return view('Backoffice.user.index', compact('users'));
     }
 
@@ -55,5 +56,26 @@ class UserController extends Controller
         toastr()->success('profile modifieé avec succeés!');
         return redirect()->route('showClientDetails');
     }
+
+
+        public function showEditUser(Request $request){
+            $id = $request->id;
+            $user = Client::where('id', $id)->first();
+    
+            return view('Backoffice.user.edit',compact('user'));
+        }
+
+
+        
+        public function handleEditUser(Request $request){
+            $id=$request->id;
+            $agent= Client::where('id', $id)->first();
+
+            $agent->update($request->all());
+            toastr()->success('Client modifieé avec succeés!');
+            return redirect()->route('showListeUser');
+
+
+            }
 
 }

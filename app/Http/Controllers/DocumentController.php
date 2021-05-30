@@ -39,7 +39,7 @@ class DocumentController extends Controller
             $fileNameToStore= $filename.'_'.time().'.'.$extension;
             // Upload Image
             $download_link= $request->file('document')->storeAs('public', $fileNameToStore);
-            $download_link= env('APP_URL','ERROR').'/storage/'. $fileNameToStore;
+            $download_link= env('APP_URL','http://127.0.0.1:8000').'/storage/'. $fileNameToStore;
         }
         else{
             $download_link='none';

@@ -35,10 +35,31 @@
         {{-- <input type="text" name="adresse"  class="form-control" id="inputAddress"  required> --}}
         <textarea name="description" id="description" class="form-control" cols="30" rows="10"></textarea>
     </div>
+    
+    <div class="n-chk">
+        <label for="description">Statut de l'entreprise</label><br><br>
+        <label class="new-control new-radio radio-danger">
+          <input type="radio" class="new-control-input" name="status" value="2" >
+          <span class="new-control-indicator"></span>CONTENTIEUX
+          
+        </label>
+        <label class="new-control new-radio radio-warning">
+            <input type="radio" class="new-control-input" name="status" value="0" checked>
+            <span class="new-control-indicator"></span>A L’ AMIABLE
+            
+          </label>
+          <label class="new-control new-radio radio-success">
+            <input type="radio" class="new-control-input" name="status" value="1" >
+            <span class="new-control-indicator"></span>R.A.S 
+            
+          </label>
+    </div>
+    <br>
     <div class="form-group mb-4">
         <label for="addresse">Logo d'entreprise</label>
         <input type="file" name="document"  class="form-control-file" id="inputAddress"  required>
     </div>
+   
     {{-- <div class="form-group mb-4">
         <label for="inputAddress2">Address 2</label>
         <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">

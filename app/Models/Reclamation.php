@@ -5,19 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Entreprise extends Model
+class Reclamation extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'nom',
-        'adresse',
-        'secteur',
-        'description',
-        'image_path',
-        'identifiant_unique',
-        'statut'
-        
+        'titre',
+        'type',
+        'contenu',
+        'status',
+        'id_client',
+        'document_path'
     ];
-
 }

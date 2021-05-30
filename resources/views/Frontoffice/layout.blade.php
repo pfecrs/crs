@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title> Centre Risque sectorielle</title>
+    <title> Centrale  Risque sectorielle</title>
 
     <link rel="shortcut icon" href="https://www.crs-src.org/wp-content/uploads/2020/08/crs-icon.png" type="image/x-icon">  
     
@@ -213,7 +213,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('showClientListeEntreprise')}}" id="elements-sidebar-menu-mobile">
+                        <a href="{{route('showSearchEntreprise')}}" id="elements-sidebar-menu-mobile">
                             <i data-feather="search"></i>
                         </a>
                     </li>
@@ -222,11 +222,14 @@
                             <i data-feather="book"></i>
                         </a>
                     </li>
-                    {{-- <li>
-                        <a href="messaging-chat.html" id="open-messages-mobile">
-                            <i data-feather="message-circle"></i>
+
+
+                    
+                    <li>
+                        <a href="{{route('showReclamationIndexClient')}}" id="open-messages-mobile">
+                            <i data-feather="bell"></i>
                         </a>
-                    </li> --}}
+                    </li>
                 </ul>
 
                 {{-- <ul class="bottom-icon-side-menu">
@@ -293,7 +296,7 @@
                         </a>
                     </li> <!-- Bounties -->
                     <li>
-                        <a href="{{route('showClientListeEntreprise')}}" id="elements-sidebar-menu" data-content="Elements">
+                        <a href="{{route('showSearchEntreprise')}}" id="elements-sidebar-menu" data-content="Elements">
                             <i class="sidebar-svg" data-feather="search"></i>
                         </a>
                     </li> <!-- Bugs -->
@@ -302,11 +305,11 @@
                             <i class="sidebar-svg" data-feather="book"></i>
                         </a>
                     </li> <!-- Messaging -->
-                    {{-- <li id="messages-menu">
-                        <a href="admin-messaging-chat.html" id="open-messages" data-content="Messaging">
-                            <i class="sidebar-svg" data-feather="message-circle"></i>
+                    <li>
+                        <a href="{{route('showReclamationIndexClient')}}" id="open-messages-mobile">
+                            <i data-feather="bell"></i>
                         </a>
-                    </li> --}}
+                    </li>
                 </ul>
 
                 <!-- User account -->
@@ -653,7 +656,17 @@
         <script src={{asset('Frontoffice/assets/js/user-grid.js')}}></script>
   
 
-
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/608623ef62662a09efc2093f/1f45vonv1';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+            </script>
 
 
         {{-- <script src={{asset('Frontoffice/assets/js/business-2.js')}}></script> --}}

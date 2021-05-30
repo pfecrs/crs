@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('client/entreprise/search',[EntrepriseController::class, 'search'])->name('handleSearchEntreprise');
+Route::get('entrepriseapi',[EntrepriseController::class, 'showEnrepriseApi']);
 //Route::post('entreprise', [EntrepriseController::class, 'handleDelete'])->name('handleDeleteEntreprise');

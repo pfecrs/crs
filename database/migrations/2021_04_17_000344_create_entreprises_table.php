@@ -22,6 +22,7 @@ class CreateEntreprisesTable extends Migration
             $table->string('email', 255)->nullable();
             $table->integer('phone')->unsigned()->nullable();
             $table->text('description', 255)->nullable();
+            $table->integer('statut')->nullable();
             $table->string('image_path', 255)->nullable();
 
             $table->timestamps();

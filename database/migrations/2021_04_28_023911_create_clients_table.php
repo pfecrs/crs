@@ -24,6 +24,7 @@ class CreateClientsTable extends Migration
             $table->string('cin')->unique();
             $table->string('entreprise')->nullable();
             $table->integer('nb_docs')->nullable();
+            $table->date('date_expiration')->nullable();
             $table->string('password');
             $table->boolean('is_super')->default(false);
             $table->rememberToken();

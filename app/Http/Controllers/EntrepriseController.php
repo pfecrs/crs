@@ -31,6 +31,12 @@ class EntrepriseController extends Controller
         return view('Backoffice.entreprise.index', compact('entreprises'));
     }
 
+    public function showEnrepriseApi()
+    {
+        $entreprises = Entreprise::all();
+        return $entreprises;
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -80,6 +86,7 @@ class EntrepriseController extends Controller
         $entreprise->email = $request->email;
         $entreprise->description=$request->description;
         $entreprise->image_path=$download_link;
+        $entreprise->statut = $request->status;
         $entreprise->save();
         toastr()->success('Entreprise ajouteé avec succeés!');
 
@@ -129,6 +136,9 @@ class EntrepriseController extends Controller
         $entreprise->secteur = $request->secteur;
         $entreprise->adresse = $request->adresse;
         //$entreprise->id_document = 0;
+        $entreprise->phone = $request->phone;
+        $entreprise->email = $request->email;
+        $entreprise->statut = $request->status;
         
         $entreprise->save();
         toastr()->success('Entreprise modifieé avec succeés!');
@@ -159,12 +169,19 @@ class EntrepriseController extends Controller
         return view('Frontoffice.entreprise.liste', compact('entreprises','documents'));
     }
 
-
-
-
-    public function search(Request $request)
+    public function showSearch(Request $request)
     {
-        $search = $request->get('r');
-        return Product::where('identifiant_unique','like','%',$search,'%')->get();
+        // $search = $request->get('id');
+        // $result=Entreprise::where('identifiant_unique',$search)->get();
+        return view('Frontoffice.search.search') ;
+    }
+
+
+    public function handleSearch(Request $request)
+    {
+        $search = $request->id;
+        //dd($search);
+        $result=Entreprise::where('identifiant_unique',$search)->first();
+        return view('Frontoffice.search.search', compact('result')) ;
     }
 }

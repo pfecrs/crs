@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 
@@ -76,10 +77,20 @@ class LoginController extends Controller
         // ]);
             //dd($request->all());
         if (Auth::guard('client')->attempt(['email' => $request->email, 'password' => $request->password], $request->get('remember'))) {
+            $client=Auth::guard('client')->getUser();
+            $date_exp=$client['date_expiration'];
+            $date_expiration = $date_exp;
             
+            $today=date("Y-m-d");
+           // dd($date_expiration,$today);
+            if ($date_expiration < $today){
+                Session::flush();
+                Auth::logout();
+                return view('Frontoffice.not-planning');
+            }
             return redirect()->intended('client/entreprises');
         }
-        dd('off');
+       // dd('off');
         return back()->withInput($request->only('email', 'remember'));
     }
 

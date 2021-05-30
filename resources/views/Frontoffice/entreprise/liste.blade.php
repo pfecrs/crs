@@ -94,6 +94,13 @@
                     </div>
                     <h3 class="dark-inverted" data-filter-match>{{$entreprise->nom}}</h3>
                     <p data-filter-match>{{$entreprise->secteur}}</p>
+                    @if ( $entreprise->statut  == 2)
+                                            <span class="tag is-rounded is-danger is-elevated">CONTENTIEUX</span>
+                                            @elseif ( $entreprise->statut  == 1)
+                                            <span class="tag is-rounded is-success is-elevated">R.A.S</span>
+                                            @else
+                                            <span class="tag is-rounded is-warning is-elevated">A L’ AMIABLE</span>      
+                                            @endif
                     {{-- <div class="people">
                         <div class="h-avatar is-small">
                             <span class="avatar is-fake is-warning" data-user-popover="36">
@@ -149,12 +156,31 @@
                                         <br>
                                         <h3 class="dark-inverted">Secteur d'activité</h3>
                                         <p>{{$entreprise->secteur}}</p>
+                                        <h3 class="dark-inverted">Statut</h3>
+                                            @if ( $entreprise->statut  == 2)
+                                            <span class="tag is-rounded is-danger is-elevated">CONTENTIEUX</span>
+                                            @elseif ( $entreprise->statut  == 1)
+                                            <span class="tag is-rounded is-success is-elevated">R.A.S</span>
+                                            @else
+                                            <span class="tag is-rounded is-warning is-elevated">A L’ AMIABLE</span>      
+                                            @endif
+                                        </td>
+                                       
+
+
+                                       
+                                       
+                                       
+
+
+                                        <h3 class="dark-inverted">Matricule fiscale</h3>
+                                        <p>{{$entreprise->identifiant_unique}}</p>
                                         <h3 class="dark-inverted">Adresse</h3>
-                                        <p>{{$entreprise->adresse}}</p>
+                                        <p><a href="http://maps.google.com/?q={{$entreprise->adresse}}" target="_blank">{{$entreprise->adresse}}</a></p>
                                         <h3 class="dark-inverted">Telephone</h3>
-                                        <p>{{$entreprise->phone}}</p>
+                                        <p><a href="tel:+216{{$entreprise->phone}}"> {{$entreprise->phone}}</a></p>
                                         <h3 class="dark-inverted">Email</h3>
-                                        <p>{{$entreprise->email}}</p>
+                                        <p><a href="mailto: {{$entreprise->email}}"> {{$entreprise->email}}</a></p>
                                         <h3 class="dark-inverted">Description </h3>
                                         <p>{{$entreprise->description}}</p>
                                     </div>
@@ -198,7 +224,7 @@
                                         @if ($entreprise->id == $document->id_entreprise)
                                         <div>
                                         
-                                        <p>  <i data-feather="file"></i> {{$document->nom}}</p>
+                                        <p><a href="{{$document->file_path}}" target="_blank">  <i data-feather="file"></i> {{$document->nom}}</a></p>
                                         </div>
                                         @endif
 

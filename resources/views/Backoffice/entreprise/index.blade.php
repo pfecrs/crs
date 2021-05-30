@@ -15,7 +15,7 @@
                                 <th>Nom de l'entreprise</th>
                                 <th>Secteur d'activité</th>
                                 <th>Adresse</th>
-                                {{-- <th>Document</th> --}}
+                                <th>Statut</th>
                                 {{-- <th>Start date</th>
                                 <th>Salary</th> --}}
                                 <th class="no-content">Actions</th>
@@ -23,13 +23,19 @@
                         </thead>
                         <tbody>
                             @foreach ($entreprises as $entreprise)
-                                
-                         
                             <tr>
                                 <td>{{$entreprise->nom}}</td>
                                 <td>{{$entreprise->secteur}}</td>
                                 <td>{{$entreprise->adresse}}</td>
-
+                                <td>
+                                    @if ( $entreprise->statut  == 2)
+                                    <div class="t-dot bg-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="CONTENTIEUX"></div>
+                                    @elseif ( $entreprise->statut  == 1)
+                                    <div class="t-dot bg-success" data-toggle="tooltip" data-placement="top" title="" data-original-title="R.A.S"></div>
+                                    @else
+                                    <div class="t-dot bg-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="A L’ AMIABLE"></div>
+                                    @endif
+                                </td>
                                 {{-- <td>{{$entreprise->id_document}}</td> --}}
                                 {{-- <td>2011/04/25</td>
                                 <td>$320,800</td> --}}
@@ -56,6 +62,7 @@
                                 <th>Nom de l'entreprise</th>
                                 <th>Secteur d'activité</th>
                                 <th>Adresse</th>
+                                <th>Statut</th>
                                 {{-- <th>Document</th> --}}
                                 {{-- <th>Start date</th>
                                 <th>Salary</th> --}}

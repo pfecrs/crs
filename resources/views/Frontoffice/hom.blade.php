@@ -39,16 +39,16 @@
           <span class="icon-bar"></span>
          </button>
          {{-- <a class="navbar-brand logo-img logo-img-a pix-adjust-height" href="#"><img src="https://pixfort.com/items/1/images/studio/megapack-logo-navy-blue.png" alt="" class="img-responsive pix-logo-img"></a> --}}
-		 <a class="navbar-brand logo-img logo-img-a pix-adjust-height" href="#">Centre Risque Sectorielle</a>
+		 <a class="navbar-brand logo-img logo-img-a pix-adjust-height " href="#"><p> Centralle Risque Sectorielle </p></a>
         </div>
-        <div class="collapse navbar-collapse" id="pix-navbar-collapse">
+        {{-- <div class="collapse navbar-collapse" id="pix-navbar-collapse">
          <ul class="nav navbar-nav navbar-right media-middle pix-header-nav pix-adjust-height" id="pix-header-nav">
           <li class="dropdown"><a href="#" class="pix-navy-blue-2">SERVICES</a>
           </li>
 		  <li class="dropdown"><a href="#" class="pix-navy-blue-2">SERVICES</a>
           </li>
 		  <li class="dropdown"><a href="#" class="pix-navy-blue-2">SERVICES</a>
-          </li>
+          </li> --}}
           {{-- <li class="dropdown">
            <a href="#" class="dropdown-toggle pix-navy-blue-2" data-toggle="dropdown">
             FEATURES
@@ -63,20 +63,20 @@
            {{-- </ul>
           </li> --}} 
           {{-- <li class="dropdown"><a href="#" class="pix-navy-blue-2" data-toggle="modal" data-target="#popup_20">CONTACT</a></li> --}}
-         </ul>
-        </div>
+         {{-- </ul>
+        </div> --}}
        </div>
       </nav>
      </div>
     </div>
     <div class="col-md-2 col-xs-12 pix-inner-col col-sm-2">
-     <div class="pix-content pix-adjust-height text-right">
+     <div class="pix-content pix-adjust-height text-right ">
 
-      <div class="pix-header-item">
-		<li class="dropdown"><a href="#" class="pix-navy-blue-2" data-toggle="modal" data-target="#popup_20" >LOGIN</a>
+      <div class="pix-header-item ">
+		<li class="dropdown"><a href="#" class="pix-navy-blue-2 " data-toggle="modal" data-target="#popup_20" >Login</a>
 		</li>
 
-		<li class="dropdown"><a href="#" class="pix-navy-blue-2" data-toggle="modal" data-target="#popup_21" style="margin-left: 2em">REGISTER</a>
+		<li class="dropdown"><a href="#" class="pix-navy-blue-2 " data-toggle="modal" data-target="#popup_21" style="margin-left: 2em">Register</a>
 		</li>
        {{-- <a href="#" class="small-social">
         <i class="fa fa-user fa-5x"></i>
@@ -94,21 +94,21 @@
   </div>
  </div>
 
- <div class="pix_section pix-padding-v-200 pix-studio-1">
+ <div class="pix_section pix-padding-v-200 bg-primary">
   <div class="container">
    <div class="row">
     <div class="col-md-12 col-xs-12 col-sm-2 column">
      <div class="pix-content text-left secondary-font">
-      <div><h5><span class="pix_edit_text"><span class="label label-default pix-green-light white-bg">#1 DESIGN STUDIO IN EUROPE</span></span></h5></div>
+      {{-- <div><h5><span class="pix_edit_text"><span class="label label-default pix-green-light white-bg">#1 DESIGN STUDIO IN EUROPE</span></span></h5></div> --}}
       <div>
        <h2 class="pix-white pix-small-width-text pix-padding-bottom-10 secondary-font">
-        <span class="pix_edit_text">Looking for Premium Services? Discover PixFort Studio.</span>
+        <span class="pix_edit_text">Bienvenue au site des services de consultation à distance de la Centrale de Risque Sectorielle. </span>
        </h2>
       </div>
       <div>
-       <a href="#" class="btn dark-red-bg btn-lg wide-2 pix-white pix-margin-right-10 wide pix-margin-top-10 secondary-font" data-toggle="modal" data-target="#popup_20">
+       <a href="#" class="btn dark-red-bg btn-lg wide-2 pix-white pix-margin-right-10 wide pix-margin-top-10 secondary-font" data-toggle="modal" data-target="#popup_21">
         <span class="pix_edit_text">
-         <strong>Order Services Today</strong>
+         <strong>Creation d'un Compte</strong>
         </span>
        </a>
       </div>
@@ -117,13 +117,13 @@
    </div>
   </div>
  </div>
-
+{{-- 
  <div class="pix_section pix-padding-v-85">
   <div class="container">
    <div class="row">
     <div class="col-md-12 col-xs-12">
      <div class="pix-content text-center">
-      <div class="pix-margin-bottom-15"><h6><span class="pix_edit_text"><span class="label label-default pix-navy-blue-2 light-blue-bg">MADE BY AN ELITE AUTHOR</span></span></h6></div>
+      <div class="pix-margin-bottom-15"><h6><span class="pix_edit_text"><span class="label label-default pix-navy-blue-2 light-blue-bg"></span></span></h6></div>
       <h2 class="pix-navy-blue pix-no-margin-top secondary-font">
        <span class="pix_edit_text">
         Get Access to PixFort Builder.
@@ -188,9 +188,9 @@
     </div>
    </div>
   </div>
- </div>
+ </div> --}}
 
- <div class="pix_section pix-padding-v-100 light-blue-bg">
+ {{-- <div class="pix_section pix-padding-v-100 light-blue-bg">
   <div class="container">
    <div class="row">
     <div class="col-md-12 col-xs-12">
@@ -246,7 +246,7 @@
     </div>
    </div>
   </div>
- </div>
+ </div> --}}
 
  <div class="pix_section pix-padding-v-120">
   <div class="container">
@@ -260,12 +260,17 @@
           <div class="pix-content text-left">
            <h2 class="pix-navy-blue pix-no-margin-top secondary-font">
             <span class="pix_edit_text">
-             Unlimited Possibilities. 1st Class Templates.
+               Objectifs de la création du site
             </span>
            </h2>
-           <div class="pix-margin-bottom-15"><h6><span class="pix_edit_text"><span class="label label-default pix-white dark-red-bg">MADE BY AN ELITE AUTHOR</span></span></h6></div>
+           {{-- <div class="pix-margin-bottom-15"><h6><span class="pix_edit_text"><span class="label label-default pix-white dark-red-bg">MADE BY AN ELITE AUTHOR</span></span></h6></div> --}}
            <p class="pix-navy-blue-2 big-text pix-margin-bottom-10">
-            <span class="pix_edit_text">This is just a simple text made for this unique and awesome template, you can replace it with any text.</span>
+            <span class="pix_edit_text">• Faciliter la consultation des données déclarées à la Centrale d'Informations par les bénéficiaires
+               des crédits et permettre à ces derniers, moyennant une identification et une connexion, de suivre
+               leurs situations d’engagements en ligne auprès du secteur financier.</span><br><br>
+               <span>• Fiabiliser les données déclarées à la Centrale d'Informations, ainsi, en cas d'erreurs les
+                  intéressés peuvent faire des réclamations concernant leurs données auprès de leurs créanciers
+                  et/ou de la Banque Centrale de Tunisie.</span>
            </p>
           </div>
          </div>
@@ -277,8 +282,8 @@
               <i class="pixicon-painting63 big-icon-65 pix-navy-blue-3"></i>
              </span>
             </div>
-            <div class="media-body media-top">
-             <div class="pix-padding-left-5">
+            {{-- <div class="media-body media-top"> --}}
+             {{-- <div class="pix-padding-left-5">
               <h5 class="media-heading pix-navy-blue pix-no-margin-bottom pix-lineheight-36 secondary-font">
                <span class="pix_edit_text">
                 Open your own shop
@@ -292,8 +297,8 @@
                 <strong>LEARN MORE</strong>
                </span>
               </a>
-             </div>
-            </div>
+             </div> --}}
+            {{-- </div> --}}
            </div>
           </div>
          </div>
@@ -309,7 +314,7 @@
   </div>
  </div>
 
- <div class="pix_section pix-padding-v-150 pix-studio-2">
+ {{-- <div class="pix_section pix-padding-v-150 pix-studio-2">
   <div class="container">
    <div class="row">
     <div class="col-md-3 col-xs-12"></div>
@@ -341,9 +346,9 @@
     </div>
    </div>
   </div>
- </div>
+ </div> --}}
 
- <div class="pix_section pix-padding-v-50 light-blue-bg">
+ {{-- <div class="pix_section pix-padding-v-50 light-blue-bg">
   <div class="container">
    <div class="row">
     <div class="col-md-12 col-xs-12">
@@ -381,9 +386,9 @@
     </div>
    </div>
   </div>
- </div>
+ </div> --}}
 
- <div class="pix_section pix-padding-v-100">
+ {{-- <div class="pix_section pix-padding-v-100">
   <div class="container">
    <div class="row">
     <div class="col-md-6 col-xs-12">
@@ -454,9 +459,9 @@
     </div>
    </div>
   </div>
- </div>
+ </div> --}}
 
- <div class="pix_section pix-studio-3 pix-padding-v-50">
+ {{-- <div class="pix_section pix-studio-3 pix-padding-v-50">
   <div class="container">
    <div class="row">
     <div class="col-md-12 col-xs-12">
@@ -489,8 +494,8 @@
     </div>
    </div>
   </div>
- </div>
-
+ </div> --}}
+{{-- 
  <div class="pix_section light-blue-bg pix-padding-v-50">
   <div class="container">
    <div class="row">
@@ -518,9 +523,12 @@
     </div>
    </div>
   </div>
- </div>
+ </div> --}}
 
- <div class="pix_section pix-padding-v-85">
+
+
+
+ {{-- <div class="pix_section pix-padding-v-85">
   <div class="container">
    <div class="row">
     <div class="col-md-3 col-xs-12">
@@ -531,12 +539,12 @@
      <div class="pix-padding-v-10">
       <p class="pix-navy-blue-2">
         <span class="pix_edit_text">
-         Copyright © 2017 PixFort.com <br> All Rights Reserved
+         Copyright © 2021 Thor System <br> All Rights Reserved
         </span>
       </p>
      </div>
-    </div>
-    <div class="col-md-3 col-xs-12">
+    </div> --}}
+    {{-- <div class="col-md-3 col-xs-12">
      <div class="pix-content pix-padding-v-10">
       <div class="pix-padding-v-10">
        <a href="#" class="pix-navy-blue-2 secondary-font"><span class="pix_edit_text">Purchase MEGAPACK</span></a>
@@ -554,8 +562,8 @@
        <a href="#" class="pix-navy-blue-2 secondary-font"><span class="pix_edit_text">Learn more</span></a>
       </div>
      </div>
-    </div>
-    <div class="col-md-3 col-xs-12">
+    </div> --}}
+    {{-- <div class="col-md-3 col-xs-12">
      <div class="pix-content pix-padding-v-10">
       <div class="pix-padding-v-10">
        <a href="#" class="pix-navy-blue-2 secondary-font"><span class="pix_edit_text">Meet our team</span></a>
@@ -573,8 +581,8 @@
        <a href="#" class="pix-navy-blue-2 secondary-font"><span class="pix_edit_text">Contact us</span></a>
       </div>
      </div>
-    </div>
-    <div class="col-md-3 col-xs-12 col-sm-2">
+    </div> --}}
+    {{-- <div class="col-md-3 col-xs-12 col-sm-2">
      <div class="pix-content pix-adjust-height text-left">
       <a href="#" class="small-social">
        <i class="pixicon-twitter4 big-icon-50 pix-navy-blue-2"></i>
@@ -586,10 +594,10 @@
        <i class="pixicon-dribbble3 big-icon-50 pix-navy-blue-2"></i>
       </a>
      </div>
-    </div>
-   </div>
+    </div> --}}
+   {{-- </div>
   </div>
- </div>
+ </div> --}}
 {{-- POPUP LOGIN --}}
  <div id="popup_20" class="modal pix_popup" role="dialog" aria-hidden="true" style="display: none;">
   <div class="modal-dialog modal-lg">
@@ -712,7 +720,7 @@
 
 
 
-
+   <footer class="text-right mr-3"> <p>Copyright © 2021 Thor System  All Rights Reserved </p> </footer>
 
 
 <!-- Javascript -->
